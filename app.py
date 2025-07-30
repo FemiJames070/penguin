@@ -7,7 +7,9 @@ st.title("Penguine Spicey Prediction ML app")
 st.info("This is end-to-end Mahcine Learning App")
 
 with st.expander("Data"):
-  pass
+  st.write("**Raw data**")
+  df = pd.read_csv("https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv")
+  df
 
 with st.expander("Data Visualization"):
   pass
