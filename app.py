@@ -24,7 +24,7 @@ des = df.describe()
 des
 
 st.write("More information about Data")
-infor = df.info()
+info = df.info()
 info
 
 with st.expander("Data Visualization"):
