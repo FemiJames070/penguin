@@ -23,6 +23,10 @@ st.write("Descriptive Statistics")
 des = df.describe()
 des
 
+st.write("More information about Data")
+infor = df.info()
+info
+
 with st.expander("Data Visualization"):
   pass
 
