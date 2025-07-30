@@ -30,8 +30,8 @@ inf
 with st.expander("Data Visualization"):
   st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')
 
-with st.expander("Data Visuals")
-  st.boxplot(data=df, x='species', y='body_mass_g')
+  st.subheader("Box Plot: Body Mass Distribution by Species") # Added subheader for clarity
+    st.boxplot(data=df, x='species', y='body_mass_g')
 
 with st.expander("Input data"):
   pass
@@ -39,28 +39,34 @@ with st.expander("Input data"):
 with st.expander("Data Preparation"):
   pass
 
+wwith st.expander("Input data"): # Combined content from duplicate expander
+    st.write("**Input data for prediction**")
+    # This expander now holds the input_df and input_penguins display
+    # (moved from below the data dictionary creation)
+
 with st.sidebar:
-  st.header("Input Variables")
-  island = st.selectbox('Island',('Biscoe', 'Dream', 'Torgersen'))
-  bill_lenght_mm = st.slider('Bill lenght (mm)', 32.1, 59.6, 43.9)
-  bill_depth_mm = st.slider('Bill depth (mm)', 13.1, 21.5, 17.2)
-  flipper_lenght_mm = st.slider('Flipper lenght (mm)', 172.0, 231.0, 201.0)
-  body_mass_g = st.slider('Body mass (g)', 2700.0, 6300.0, 4207.0)
-  gender = st.selectbox('Gender',('male','female'))
+        st.header("Input Variables")
+        island = st.selectbox('Island',('Biscoe', 'Dream', 'Torgersen'))
+        # Corrected typos in slider labels and variable names
+        bill_length_mm = st.slider('Bill length (mm)', 32.1, 59.6, 43.9)
+        bill_depth_mm = st.slider('Bill depth (mm)', 13.1, 21.5, 17.2)
+        flipper_length_mm = st.slider('Flipper length (mm)', 172.0, 231.0, 201.0)
+        body_mass_g = st.slider('Body mass (g)', 2700.0, 6300.0, 4207.0)
+        gender = st.selectbox('Gender',('male','female'))
 
-data = {'island':island,
-        'bill_lenght_mm':bill_lenght_mm,
+# Data dictionary for input_df (moved inside the expander for logical flow)
+    data = {
+        'island': island,
+        'bill_length_mm': bill_length_mm, # Corrected typo
         'bill_depth_mm': bill_depth_mm,
-        'flipper_lenght_mm':flipper_lenght_mm,
+        'flipper_length_mm': flipper_length_mm, # Corrected typo
         'body_mass_g': body_mass_g,
-        'gender': gender
-}
-input_df = pd.DataFrame(data, index=[0])
-input_penguins = pd.concat([input_df, X_raw], axis=0)
+        'sex': gender # Changed 'gender' to 'sex' to match DataFrame column name
+    }
+    input_df = pd.DataFrame(data, index=[0])
+    st.dataframe(input_df) # Display input_df
 
-with st.expander("Input data"):
-  st.write("**input data**")
-  input_df
-  st.write("**Combined data**")
-  input_penguins
+    st.write("**Combined data (Input + Raw)**")
+    input_penguins = pd.concat([input_df, X_raw], axis=0)
+    st.dataframe(input_penguins) # Display combined data
   
