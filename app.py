@@ -39,7 +39,7 @@ with st.expander("Input data"):
 with st.expander("Data Preparation"):
   pass
 
-wwith st.expander("Input data"): # Combined content from duplicate expander
+with st.expander("Input data"): # Combined content from duplicate expander
     st.write("**Input data for prediction**")
     # This expander now holds the input_df and input_penguins display
     # (moved from below the data dictionary creation)
