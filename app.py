@@ -20,3 +20,4 @@ with st.expander("Data Preparation"):
 
 with st.sidebar:
   st.header("Input Variables")
+  island = st.selectbox('Island',('Biscoe', 'Dream', 'Torgersen'))
