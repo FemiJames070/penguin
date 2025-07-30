@@ -45,17 +45,15 @@ wwith st.expander("Input data"): # Combined content from duplicate expander
     # (moved from below the data dictionary creation)
 
 with st.sidebar:
-        st.header("Input Variables")
+    st.header("Input Variables")
         island = st.selectbox('Island',('Biscoe', 'Dream', 'Torgersen'))
-        # Corrected typos in slider labels and variable names
         bill_length_mm = st.slider('Bill length (mm)', 32.1, 59.6, 43.9)
         bill_depth_mm = st.slider('Bill depth (mm)', 13.1, 21.5, 17.2)
         flipper_length_mm = st.slider('Flipper length (mm)', 172.0, 231.0, 201.0)
         body_mass_g = st.slider('Body mass (g)', 2700.0, 6300.0, 4207.0)
         gender = st.selectbox('Gender',('male','female'))
 
-# Data dictionary for input_df (moved inside the expander for logical flow)
-    data = {
+data = {
         'island': island,
         'bill_length_mm': bill_length_mm, # Corrected typo
         'bill_depth_mm': bill_depth_mm,
@@ -63,7 +61,7 @@ with st.sidebar:
         'body_mass_g': body_mass_g,
         'sex': gender # Changed 'gender' to 'sex' to match DataFrame column name
     }
-    input_df = pd.DataFrame(data, index=[0])
+input_df = pd.DataFrame(data, index=[0])
     st.dataframe(input_df) # Display input_df
 
     st.write("**Combined data (Input + Raw)**")
