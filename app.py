@@ -30,7 +30,7 @@ inf
 with st.expander("Data Visualization"):
   st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')
 
-  st.subheader("Box Plot: Body Mass Distribution by Species") # Added subheader for clarity
+st.subheader("Box Plot: Body Mass Distribution by Species") # Added subheader for clarity
     st.boxplot(data=df, x='species', y='body_mass_g')
 
 with st.expander("Input data"):
