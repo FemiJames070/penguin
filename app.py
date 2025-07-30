@@ -62,9 +62,9 @@ data = {
     'sex': gender # Changed 'gender' to 'sex' to match DataFrame column name
     }
 input_df = pd.DataFrame(data, index=[0])
-    st.dataframe(input_df) # Display input_df
+st.dataframe(input_df) # Display input_df
 
-    st.write("**Combined data (Input + Raw)**")
-    input_penguins = pd.concat([input_df, X_raw], axis=0)
-    st.dataframe(input_penguins) # Display combined data
+st.write("**Combined data (Input + Raw)**")
+input_penguins = pd.concat([input_df, X_raw], axis=0)
+st.dataframe(input_penguins) # Display combined data
   
