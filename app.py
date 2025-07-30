@@ -28,7 +28,7 @@ inf = df.info()
 inf
 
 with st.expander("Data Visualization"):
-  st.scatter_chart(data=df, x= 'bill_lenght_mm', y='body_mass_g', color='species')
+  st.scatter_chart(data=df, x='bill_length_mm', y='body_mass_g', color='species')
 
 with st.expander("Input data"):
   pass
