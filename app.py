@@ -50,7 +50,7 @@ with st.sidebar:
 
 data = {'island':island,
         'bill_lenght_mm':bill_lenght_mm,
-        'bill_depth_mm'': bill_depth_mm,
+        'bill_depth_mm': bill_depth_mm,
         'flipper_lenght_mm':flipper_lenght_mm,
         'body_mass_g': body_mass_g,
         'gender': gender
