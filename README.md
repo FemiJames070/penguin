@@ -44,5 +44,6 @@ This project demonstrates the end-to-end integration of raw data ingestion, real
 4. **Access the Dashboard:**
 Open your browser and navigate to the local URL provided in your terminal (usually http://localhost:8501).
 
-✍️ Author
-Femi James Data & Business Analyst | Integrated AI Specialist
+## ✍️ Author
+Femi James 
+Data & Business Analyst | Integrated AI Specialist
