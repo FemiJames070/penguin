@@ -11,7 +11,7 @@
 ## 📖 Overview
 This repository contains a data-driven web application that integrates machine learning directly into an interactive user interface. Built with **Streamlit**, the application utilizes a **Random Forest Classifier** to predict the species of a penguin (Adelie, Chinstrap, or Gentoo) based on geographical data and morphological measurements.
 
-This project demonstrates the end-to-end integration of raw data ingestion, real-time user input, on-the-fly model training, and probabilistic inference—all wrapped in a clean, accessible web dashboard.
+This project demonstrates the end-to-end integration of raw data ingestion, real-time user input, on-the-fly model training, and probabilistic inference, all wrapped in a clean, accessible web dashboard.
 
 ## ✨ Key Features
 * **Interactive Feature Input:** A dynamic sidebar allows users to adjust continuous variables (bill length, body mass, etc.) and categorical variables (island, gender) in real-time.
