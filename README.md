@@ -36,9 +36,8 @@ This project demonstrates the end-to-end integration of raw data ingestion, real
 2. **Install the required dependencies:**
    ```bash
    pip install streamlit numpy pandas scikit-learn altair
-   Run the Streamlit App:
 
-3. **Install the required dependencies:**
+3. **Run the Streamlit App:**
    ```bash
    streamlit run app.py
 
