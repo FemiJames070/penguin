@@ -38,10 +38,11 @@ This project demonstrates the end-to-end integration of raw data ingestion, real
    pip install streamlit numpy pandas scikit-learn altair
    Run the Streamlit App:
 
+3. **Install the required dependencies:**
    ```bash
    streamlit run app.py
 
-3. **Access the Dashboard:**
+4. **Access the Dashboard:**
 Open your browser and navigate to the local URL provided in your terminal (usually http://localhost:8501).
 
 ✍️ Author
