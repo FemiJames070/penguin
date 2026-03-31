@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 import altair as alt
 
-st.title('🤖 Machine Learning App Jazzpreet')
+st.title('🤖 Machine Learning App Femi James')
 
 st.info('This app builds a machine learning model!')
 
